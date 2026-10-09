@@ -1,0 +1,32 @@
+{
+  "name": "Palhar Food Products LLC - Global Food Exporter",
+  "short_name": "Palhar Foods",
+  "description": "Premium raw food materials shipped worldwide in containers by trucks and ships",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#155c56",
+  "theme_color": "#155c56",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/og-preview.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/og-preview.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["business", "food", "export", "logistics"],
+  "lang": "en",
+  "dir": "ltr"
+}
