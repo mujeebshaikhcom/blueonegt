@@ -118,9 +118,9 @@ export default function Footer() {
                 </svg>
                 <div>
                   <p className="text-gray-300">UAE Office</p>
-                  <p className="text-sm text-gray-400">Office #112 - Al-Khoory Hill Bldg</p>
-                  <p className="text-sm text-gray-400">Ras-Al-Khor Ind. Area 2</p>
-                  <p className="text-sm text-gray-400">Al-Manama Street</p>
+                  <p className="text-sm text-gray-400">Office #33-03 & #33-05 - 1<sup>st</sup>Floor</p>
+                  <p className="text-sm text-gray-400">Bloom Market, Ras-Al-Khor</p>
+                  <p className="text-sm text-gray-400">Al-Awir Vegetable & Fruit Market</p>
                   <p className="text-sm text-gray-400">Dubai, United Arab Emirates</p>
                 </div>
               </div>

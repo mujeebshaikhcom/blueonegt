@@ -193,6 +193,39 @@ function TeamSection() {
     { number: '24/7', label: 'Customer Support' }
   ]
 
+  const teamMembers = [
+    {
+      name: 'Asif Hanif Khanda',
+      role: 'Director',
+      expertise: 'Corporate strategy, market expansion, and stakeholder relations'
+    },
+    {
+      name: 'Rafique Nadaf',
+      role: 'Head Manager',
+      expertise: 'Customs compliance, international shipping, and freight forwarding'
+    },
+    {
+      name: 'Zaid Shaikh',
+      role: 'Manager',
+      expertise: 'Operations oversight, team coordination, and process optimization'
+    },
+    {
+      name: 'Ahmed Asif Khand',
+      role: 'Business Development Manager',
+      expertise: 'Product quality standards, inspection protocols, and regulatory compliance'
+    },
+    {
+      name: 'Zaid Shaikh',
+      role: 'Quality Control Lead',
+      expertise: 'Market research, client acquisition, and partnership development'
+    },
+    {
+      name: 'Zaid Shaikh',
+      role: 'Customer Success Manager',
+      expertise: 'Client relationship management, support escalation, and satisfaction optimization'
+    }
+  ]
+
   return (
     <section className="section-padding gradient-primary text-white" ref={ref}>
       <div className="container-custom">
@@ -226,6 +259,27 @@ function TeamSection() {
                 {stat.number}
               </motion.div>
               <div className="text-lg lg:text-xl text-blue-100">{stat.label}</div>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {teamMembers.map((member, index) => (
+            <motion.div
+              key={member.name}
+              className="card p-6 text-center hover:scale-105 transition-transform duration-300"
+              initial={{ opacity: 0, y: 30 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: index * 0.1 }}
+            >
+              <div className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center bg-[#C19643] text-white text-3xl font-bold">
+                {member.name.charAt(0)}
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-[#C19643]">{member.name}</h3>
+              <p className="text-[#E6CE8F] text-sm font-bold mb-4">{member.role}</p>
+              <p className="text-gray-300 text-xs font-bold line-clamp-2">
+                {member.expertise}
+              </p>
             </motion.div>
           ))}
         </div>

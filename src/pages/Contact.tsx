@@ -237,9 +237,9 @@ const handleSubmit = (e: React.FormEvent) => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-[var(--primary)] mb-2">Head Office</h3>
-                  <p className="text-gray-600">Office #112 - Al-Khoory Hill Bldg</p>
-                  <p className="text-gray-600">Ras-Al-Khor Ind. Area 2</p>
-                  <p className="text-gray-600">Al-Manama Street</p>
+                  <p className="text-gray-600">Office #33-03 & #33-05 - 1<sup>st</sup>Floor</p>
+                  <p className="text-gray-600">Bloom Market, Ras-Al-Khor</p>
+                  <p className="text-gray-600">Al-Awir Vegetable & Fruit Market</p>
                   <p className="text-gray-600">Dubai, United Arab Emirates</p>
                 
                   </div>
