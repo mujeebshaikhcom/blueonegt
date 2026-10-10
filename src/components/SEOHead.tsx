@@ -10,14 +10,14 @@ interface SEOHeadProps {
 }
 
 export default function SEOHead({ 
-  title = "Palhar Food Products LLC - Global Food Exporter | Premium Raw Materials",
+  title = "Blue One General Trading LLC - Global Food Exporter | Premium Raw Materials",
   description = "Leading global exporter of premium raw food materials. We ship fresh fruits, vegetables, grains, spices, and nuts worldwide in containers by trucks and ships.",
-  keywords = "food export, raw materials, global shipping, containers, fresh fruits, vegetables, grains, spices, nuts, UAE, Dubai, palhar",
+  keywords = "food export, raw materials, global shipping, containers, fresh fruits, vegetables, grains, spices, nuts, UAE, Dubai, Blue One",
   image = "/og-preview.png",
   url
 }: SEOHeadProps) {
   const location = useLocation()
-  const currentUrl = url || `https://palhar.ae${location.pathname}`
+  const currentUrl = url || `https://blueone${location.pathname}`
 
   useEffect(() => {
     // Update document title
@@ -43,7 +43,7 @@ export default function SEOHead({
     // Basic meta tags
     updateMetaTag('description', description)
     updateMetaTag('keywords', keywords)
-    updateMetaTag('author', 'Palhar Food Products LLC')
+    updateMetaTag('author', 'Blue One General Trading LLC')
     updateMetaTag('robots', 'index, follow')
     updateMetaTag('viewport', 'width=device-width, initial-scale=1.0')
 
@@ -53,7 +53,7 @@ export default function SEOHead({
     updateMetaTag('og:image', image, true)
     updateMetaTag('og:url', currentUrl, true)
     updateMetaTag('og:type', 'website', true)
-    updateMetaTag('og:site_name', 'Palhar Food Products LLC', true)
+    updateMetaTag('og:site_name', 'Blue One General Trading LLC', true)
 
     // Twitter Card tags
     updateMetaTag('twitter:card', 'summary_large_image')

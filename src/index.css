@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
-
 :root {
-	--primary: #155c56; /* #072a39 */
-	--primary-light: #0a3a4d;
-	--secondary: #f59e0b;
-	--accent: #10b981;
+	--primary: #052453;
+	--primary-light: #0a3a6a;
+	--secondary: #6b7280;
+	--accent: #c19643;
 	--text-dark: #1f2937;
 	--text-light: #6b7280;
 	--bg-light: #f9fafb;
@@ -21,7 +19,7 @@
 }
 
 body {
-	font-family: "Inter", sans-serif;
+	font-family: "Cinzel Decorative", sans-serif;
 	line-height: 1.6;
 	color: var(--text-dark);
 	overflow-x: hidden;

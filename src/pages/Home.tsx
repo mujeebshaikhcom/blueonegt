@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <>
       <SEOHead 
-        title="Palhar Food Products LLC - Global Food Exporter | Premium Raw Materials"
+        title="Blue One General Trading LLC - Global Food Exporter | Premium Raw Materials"
         description="Leading global exporter of premium raw food materials. We ship fresh fruits, vegetables, grains, spices, and nuts worldwide in containers by trucks and ships."
-        keywords="food export, raw materials, global shipping, containers, fresh fruits, vegetables, grains, spices, nuts, UAE, Dubai, palhar"
+        keywords="food export, raw materials, global shipping, containers, fresh fruits, vegetables, grains, spices, nuts, UAE, Dubai, Blue One"
       />
 
       {/* Hero Section */}
@@ -74,7 +74,7 @@ function HeroSection() {
         />
       )}
 
-      {/* 🎨 Overlay for readability */}
+      {/* Overlay for readability */}
       <div className="absolute inset-0 bg-white/70 z-0" />
 
       {/* Animated Background Elements */}
@@ -145,7 +145,7 @@ function HeroSection() {
         {/* Floating Product Icons */}
         <div className="absolute inset-0 pointer-events-none">
           <motion.div
-            className="absolute top-1/4 right-1 text-6xl"
+            className="absolute top-1/5 right-8 text-6xl"
             animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
             transition={{ duration: 4, repeat: Infinity }}
           >
@@ -213,7 +213,7 @@ function FeaturesSection() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="section-title text-[var(--primary)]">Why Choose Palhar</h2>
+          <h2 className="section-title text-[var(--primary)]">Why Choose Blue One</h2>
           <p className="section-subtitle">
             Leading the global food export industry with excellence, reliability, and innovation
           </p>

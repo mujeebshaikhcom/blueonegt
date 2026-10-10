@@ -59,7 +59,7 @@ export default function PWAInstallPrompt() {
                 <img src="/og-preview.png" alt="icon" />
               </div>
               <div className="flex-1">
-                <h3 className="font-bold text-[var(--primary)] mb-1">Install Palhar Foods</h3>
+                <h3 className="font-bold text-[var(--primary)] mb-1">Install Blue One General Trading</h3>
                 <p className="text-sm text-gray-600 mb-3">
                   Get quick access to our products and services
                 </p>

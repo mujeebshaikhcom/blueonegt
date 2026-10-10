@@ -34,10 +34,10 @@ export default function Footer() {
           >
             <div className="flex items-center space-x-3">
               <div className="w-40 h-20 rounded-lg flex items-start justify-center">
-                <img src="/palhar_logo_b.png" alt="Logo" className="w-40" />
+                <img src="/blueone_logo_b.png" alt="Logo" className="w-40" />
               </div>
             </div>
-            <h3 className="text-xl font-bold mb-4">Palhar Food Products LLC</h3>
+            <h3 className="text-xl font-bold mb-4">Blue One General Trading LLC</h3>
             <p className="text-gray-300 mb-4">
               Global exporter of premium raw food materials, delivering quality products worldwide through efficient container shipping.
             </p>
@@ -141,8 +141,8 @@ export default function Footer() {
                 </svg>
                 <div>
                   <p className="text-gray-300">Support</p>
-                  <p className="text-sm text-gray-400"><a href="mailto:info@palhar.ae">info@palhar.ae</a></p>
-                  <p className="text-sm text-gray-400"><a href="mailto:palharfood@gmail.com">palharfood@gmail.com</a></p>
+                  <p className="text-sm text-gray-400"><a href="mailto:info@Blue One.ae">info@Blue One.ae</a></p>
+                  <p className="text-sm text-gray-400"><a href="mailto:Blue Onefood@gmail.com">Blue Onefood@gmail.com</a></p>
                 </div>
               </div>
             </div>
@@ -157,7 +157,7 @@ export default function Footer() {
           viewport={{ once: true }}
         >
           <p className="text-gray-400">
-            © {currentYear} Palhar Food Products LLC. All rights reserved.
+            © {currentYear} Blue One General Trading LLC. All rights reserved.
           </p>
         </motion.div>
       </div>

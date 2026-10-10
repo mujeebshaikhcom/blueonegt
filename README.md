@@ -1,6 +1,6 @@
-# Palhar Food Products LLC - Global Food Exporter Website
+# Blue One General Trading LLC - Global Food Exporter Website
 
-A modern, interactive React website for Palhar Food Products LLC, showcasing their global food export business with premium raw food materials shipped worldwide in containers.
+A modern, interactive React website for Blue One General Trading LLC, showcasing their global food export business with premium raw food materials shipped worldwide in containers.
 
 ## 🌟 Features
 
@@ -14,7 +14,7 @@ A modern, interactive React website for Palhar Food Products LLC, showcasing the
 
 ## 🚀 Live Demo
 
-Visit: [https://palhar.ae](https://palhar.ae)
+Visit: [https://Blue One.ae](https://Blue One.ae)
 
 ## 📱 Pages
 
@@ -37,14 +37,16 @@ Visit: [https://palhar.ae](https://palhar.ae)
 ## 📦 Installation & Local Development
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - npm or yarn
 
 ### Setup
+
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/palhar-foods-website.git
-cd palhar-foods-website
+git clone https://github.com/your-username/Blue One-foods-website.git
+cd Blue One-foods-website
 
 # Install dependencies
 npm install
@@ -56,6 +58,7 @@ npm run dev
 ```
 
 ### Build for Production
+
 ```bash
 # Create production build
 npm run build
@@ -69,33 +72,38 @@ npm run preview
 ### Deploy to Netlify
 
 1. **Connect Repository**:
+
    - Go to [Netlify](https://netlify.com)
    - Click "New site from Git"
    - Connect your GitHub repository
 
 2. **Build Settings**:
+
    ```
    Build command: npm run build
    Publish directory: dist
    ```
 
 3. **Environment Variables** (if needed):
+
    - Go to Site settings > Environment variables
    - Add any required environment variables
 
 4. **Custom Domain**:
    - Go to Site settings > Domain management
-   - Add custom domain: `palhar.ae`
+   - Add custom domain: `Blue One.ae`
    - Configure DNS records as instructed
 
 ### Deploy to Render
 
 1. **Create New Static Site**:
+
    - Go to [Render](https://render.com)
    - Click "New" > "Static Site"
    - Connect your GitHub repository
 
 2. **Build Settings**:
+
    ```
    Build command: npm run build
    Publish directory: dist
@@ -103,65 +111,68 @@ npm run preview
 
 3. **Custom Domain**:
    - Go to Settings > Custom Domains
-   - Add `palhar.ae`
+   - Add `Blue One.ae`
    - Configure DNS records
 
 ### Deploy to Vercel
 
 1. **Install Vercel CLI**:
+
    ```bash
    npm i -g vercel
    ```
 
 2. **Deploy**:
+
    ```bash
    vercel --prod
    ```
 
 3. **Custom Domain**:
    - Go to Vercel dashboard > Domains
-   - Add `palhar.ae`
+   - Add `Blue One.ae`
 
 ## 📊 Product Management
 
 ### Adding New Products
 
 1. **Edit Product Data**:
+
    ```typescript
    // src/data/products.ts
    export const products: Product[] = [
-     {
-       id: 'new-product-id',
-       name: 'Product Name',
-       category: 'Fresh Fruits', // or other category
-       description: 'Product description...',
-       features: ['Feature 1', 'Feature 2'],
-       specifications: {
-         origin: 'Country of origin',
-         packaging: 'Packaging details',
-         shelfLife: 'Shelf life',
-         minimumOrder: 'Minimum order quantity'
-       },
-       isVisible: true, // Show/hide product
-       isFeatured: false, // Feature on homepage
-       hasSpecialOffer: false, // Special offer badge
-       specialOfferText: 'Optional offer text',
-       sortOrder: 7 // Display order
-     }
-   ]
+   	{
+   		id: "new-product-id",
+   		name: "Product Name",
+   		category: "Fresh Fruits", // or other category
+   		description: "Product description...",
+   		features: ["Feature 1", "Feature 2"],
+   		specifications: {
+   			origin: "Country of origin",
+   			packaging: "Packaging details",
+   			shelfLife: "Shelf life",
+   			minimumOrder: "Minimum order quantity",
+   		},
+   		isVisible: true, // Show/hide product
+   		isFeatured: false, // Feature on homepage
+   		hasSpecialOffer: false, // Special offer badge
+   		specialOfferText: "Optional offer text",
+   		sortOrder: 7, // Display order
+   	},
+   ];
    ```
 
 2. **Product Categories**:
    ```typescript
    export const categories = [
-     'All Products',
-     'Fresh Fruits',
-     'Vegetables',
-     'Grains & Cereals',
-     'Spices & Herbs',
-     'Nuts & Seeds',
-     'Dried Fruits'
-   ]
+   	"All Products",
+   	"Fresh Fruits",
+   	"Vegetables",
+   	"Grains & Cereals",
+   	"Spices & Herbs",
+   	"Nuts & Seeds",
+   	"Dried Fruits",
+   ];
    ```
 
 ### Product Management Options
@@ -175,23 +186,26 @@ npm run preview
 ## 🎨 Customization
 
 ### Colors & Branding
+
 ```css
 /* src/index.css */
 :root {
-  --primary: #155c56;        /* Main brand color */
-  --primary-light: #0a3a4d;  /* Lighter brand color */
-  --secondary: #f59e0b;      /* Secondary color (amber) */
-  --accent: #10b981;         /* Accent color (green) */
+	--primary: #155c56; /* Main brand color */
+	--primary-light: #0a3a4d; /* Lighter brand color */
+	--secondary: #f59e0b; /* Secondary color (amber) */
+	--accent: #10b981; /* Accent color (green) */
 }
 ```
 
 ### Logo Specifications
+
 - **Size**: 160px width × 100px height
-- **Design**: Golden eagle with "PALHAR" text below
+- **Design**: Golden eagle with "Blue One" text below
 - **Text Color**: #155c56
-- **Company Name**: Palhar Food Products LLC
+- **Company Name**: Blue One General Trading LLC
 
 ### Animations
+
 - **Framer Motion**: Used for page transitions and element animations
 - **CSS Animations**: Custom keyframes for floating elements
 - **Interactive Elements**: Hover effects and micro-interactions
@@ -199,30 +213,34 @@ npm run preview
 ## 📱 PWA Features
 
 ### Installation
+
 - Automatic install prompt on supported browsers
 - Custom install button in navigation
 - Offline functionality with service worker
 
 ### Manifest Configuration
+
 ```json
 {
-  "name": "Palhar Food Products LLC",
-  "short_name": "Palhar Foods",
-  "start_url": "/",
-  "display": "standalone",
-  "theme_color": "#155c56"
+	"name": "Blue One General Trading LLC",
+	"short_name": "Blue One General Trading",
+	"start_url": "/",
+	"display": "standalone",
+	"theme_color": "#155c56"
 }
 ```
 
 ## 🔍 SEO Optimization
 
 ### Meta Tags
+
 - Dynamic title and description per page
 - Open Graph tags for social sharing
 - Twitter Card support
 - Canonical URLs
 
 ### Performance
+
 - Lazy loading for images and components
 - Code splitting with React.lazy()
 - Optimized bundle size
@@ -231,9 +249,11 @@ npm run preview
 ## 📞 Support & Updates
 
 ### Future Database Integration
+
 Currently, all data is managed in code files. For future database integration:
 
 1. **Replace Static Data**:
+
    - Move product data from `src/data/products.ts` to database
    - Create API endpoints for product management
    - Add admin panel for content management
@@ -244,19 +264,22 @@ Currently, all data is managed in code files. For future database integration:
    - **CMS**: Strapi or custom admin panel
 
 ### Content Updates
+
 For now, content updates require:
+
 1. Edit files in `src/data/` or page components
 2. Commit changes to repository
 3. Redeploy to hosting platform
 
 ### Contact Information
-- **Website**: [palhar.ae](https://palhar.ae)
-- **Email**: info@palhar.ae
+
+- **Website**: [Blue One.ae](https://Blue One.ae)
+- **Email**: info@Blue One.ae
 - **Location**: Dubai, UAE
 
 ## 📄 License
 
-© 2024 Palhar Food Products LLC. All rights reserved.
+© 2024 Blue One General Trading LLC. All rights reserved.
 
 ---
 

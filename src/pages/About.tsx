@@ -35,7 +35,7 @@ function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="section-title text-[var(--primary)] mb-6">About Palhar Food Products</h1>
+          <h1 className="section-title text-[var(--primary)] mb-6">About Blue One General Trading</h1>
           <p className="section-subtitle">
             Leading the global food export industry with premium quality raw materials, 
             innovative container shipping solutions, and unwavering commitment to excellence.
@@ -62,7 +62,7 @@ function StorySection() {
             <div className="space-y-4 text-gray-600 text-lg">
               <p>
                 Founded with a vision to connect global markets through premium food exports, 
-                Palhar Food Products LLC has emerged as a trusted partner for businesses worldwide 
+                Blue One General Trading LLC has emerged as a trusted partner for businesses worldwide 
                 seeking high-quality raw food materials.
               </p>
               <p>
@@ -260,7 +260,7 @@ function CTASection() {
         >
           <h2 className="section-title text-[var(--primary)] mb-6">Partner With Us</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Ready to experience the Palhar difference? Join our global network of satisfied 
+            Ready to experience the Blue One difference? Join our global network of satisfied 
             customers and discover why we're the preferred choice for premium food exports.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

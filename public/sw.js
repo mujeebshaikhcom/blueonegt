@@ -1,4 +1,4 @@
-const CACHE_NAME = 'palhar-foods-v1';
+const CACHE_NAME = 'Blue One-foods-v1';
 const urlsToCache = [
   '/',
   '/static/js/bundle.js',

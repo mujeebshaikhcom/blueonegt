@@ -47,7 +47,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <div className="w-40 h-25 rounded-lg flex items-center justify-center">
-              <img src="/palhar_logo_t.png" alt="Logo" className="w-40" />
+              <img src="/blueone_logo_t.png" alt="Logo" className="w-40" />
             </div>
           </Link>
 

@@ -15,7 +15,7 @@ export default function Loader() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
-          Palhar Food Products
+          Blue One General Trading
         </motion.h2>
         <motion.p
           className="text-gray-600"
