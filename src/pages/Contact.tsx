@@ -274,7 +274,6 @@ const handleSubmit = (e: React.FormEvent) => {
                   <div>
                     <h3 className="text-xl font-bold text-[var(--primary)] mb-2">Email Us</h3>
                     <p className="text-gray-600"><a href="mailto:info@blueonegt.ae">info@blueonegt.ae</a></p>
-                    <p className="text-gray-600"><a href="mailto:Blue Onefood@gmail.com">Blue Onefood@gmail.com</a></p>
                     <p className="text-gray-600">Response within 24 hours</p>
                   </div>
                 </div>

@@ -141,7 +141,6 @@ export default function Footer() {
                 <div>
                   <p className="text-gray-300">Support</p>
                   <p className="text-sm text-gray-400"><a href="mailto:info@blueonegt.ae">info@blueonegt.ae</a></p>
-                  <p className="text-sm text-gray-400"><a href="mailto:Blue Onefood@gmail.com">Blue Onefood@gmail.com</a></p>
                 </div>
               </div>
             </div>

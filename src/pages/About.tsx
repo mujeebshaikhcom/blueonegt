@@ -213,16 +213,6 @@ function TeamSection() {
       name: 'Ahmed Asif Khand',
       role: 'Business Development Manager',
       expertise: 'Product quality standards, inspection protocols, and regulatory compliance'
-    },
-    {
-      name: 'Zaid Shaikh',
-      role: 'Quality Control Lead',
-      expertise: 'Market research, client acquisition, and partnership development'
-    },
-    {
-      name: 'Zaid Shaikh',
-      role: 'Customer Success Manager',
-      expertise: 'Client relationship management, support escalation, and satisfaction optimization'
     }
   ]
 
