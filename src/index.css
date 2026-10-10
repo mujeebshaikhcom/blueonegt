@@ -135,7 +135,7 @@ html {
 }
 
 .btn-secondary {
-	@apply bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+	@apply bg-[#C19643] hover:bg-[#C19643] text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
 }
 
 .btn-outline {

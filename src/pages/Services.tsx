@@ -28,7 +28,7 @@ export default function Services() {
 
 function HeroSection() {
   return (
-    <section className="section-padding bg-gradient-to-br from-blue-50 to-green-50">
+    <section className="section-padding bg-gradient-to-br from-[#05245369] to-[#C19643]">
       <div className="container-custom text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -133,7 +133,7 @@ function MainServicesSection() {
                 {service.features.map((feature, i) => (
                   <li key={i} className="flex items-center space-x-3">
                     <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-                      <svg className="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                      <svg className="w-3 h-3 text-[#C19643]" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
@@ -210,7 +210,7 @@ function ProcessSection() {
               transition={{ duration: 0.8, delay: index * 0.1 }}
             >
               <div className="card p-8 text-center h-full">
-                <div className="w-16 h-16 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#C19643] to-[#C19643] rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-2xl font-bold text-[var(--primary)]">{step.number}</span>
                 </div>
                 <h3 className="text-xl font-bold text-[var(--primary)] mb-4">{step.title}</h3>
@@ -219,7 +219,7 @@ function ProcessSection() {
               
               {/* Connection Line */}
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-amber-400 transform -translate-y-1/2"></div>
+                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-[#C19643] transform -translate-y-1/2"></div>
               )}
             </motion.div>
           ))}

@@ -16,7 +16,7 @@ function RelatedProductCard({ product, index, productIcon }: { product: any; ind
         <div className="card-product">
           <div className="relative overflow-hidden">
             <div
-              className="w-full h-48 bg-gradient-to-br from-green-100 to-amber-100 flex items-center justify-center bg-cover bg-center"
+              className="w-full h-48 bg-gradient-to-br from-[#E6CE8F] to-[#E6CE8F] flex items-center justify-center bg-cover bg-center"
               style={{
                 backgroundImage: validImage ? `url(${validImage})` : 'none',
               }}
@@ -40,7 +40,7 @@ function RelatedProductCard({ product, index, productIcon }: { product: any; ind
               {product.description}
             </p>
             <div className="flex justify-between items-center">
-              <span className="text-sm text-amber-600 font-medium">
+              <span className="text-sm text-[#C19643] font-medium">
                 {product.category}
               </span>
               <span className="text-[var(--primary)] font-bold">View →</span>

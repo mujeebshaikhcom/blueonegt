@@ -28,7 +28,7 @@ export default function About() {
 
 function HeroSection() {
   return (
-    <section className="section-padding bg-gradient-to-br from-blue-50 to-green-50">
+    <section className="section-padding bg-gradient-to-br from-[#05245369] to-[#C19643]">
       <div className="container-custom text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -218,7 +218,7 @@ function TeamSection() {
               transition={{ duration: 0.8, delay: index * 0.1 }}
             >
               <motion.div
-                className="text-4xl lg:text-6xl font-bold text-amber-400 mb-2"
+                className="text-4xl lg:text-6xl font-bold text-[#C19643] mb-2"
                 initial={{ opacity: 0 }}
                 animate={inView ? { opacity: 1 } : {}}
                 transition={{ duration: 1, delay: index * 0.1 + 0.5 }}
@@ -251,7 +251,7 @@ function CTASection() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
 
   return (
-    <section className="section-padding bg-amber-50" ref={ref}>
+    <section className="section-padding bg-[#E6CE8F]" ref={ref}>
       <div className="container-custom text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

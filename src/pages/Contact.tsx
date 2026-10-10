@@ -27,7 +27,7 @@ export default function Contact() {
 
 function HeroSection() {
   return (
-    <section className="section-padding bg-gradient-to-br from-blue-50 to-green-50">
+    <section className="section-padding bg-gradient-to-br from-[#05245369] to-[#C19643]">
       <div className="container-custom text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -230,8 +230,8 @@ const handleSubmit = (e: React.FormEvent) => {
               {/* Office Info */}
               <div className="card p-8">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                    <svg className="w-6 h-6 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-12 h-12 bg-[#E6CE8F] rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-[#C19643]" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                     </svg>
                   </div>
@@ -249,15 +249,15 @@ const handleSubmit = (e: React.FormEvent) => {
               {/* Phone */}
               <div className="card p-8">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                    <svg className="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-12 h-12 bg-[#E6CE8F] rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-[#C19643]" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                     </svg>
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-[var(--primary)] mb-2">Phone Support</h3>
-                    <p className="text-gray-600"><a href="tel:+971588656122">+971 58-8656122</a></p>
-                    <p className="text-gray-600"><a href="tel:04-3276151">Tel: 04-3276151</a> Available 24/7 for urgent inquiries</p>
+                    <p className="text-gray-600"><a href="tel:+971561344527">+971 56-1344527</a></p>
+                    <p className="text-gray-600">Available 24/7 for urgent inquiries</p>
                   </div>
                 </div>
               </div>
@@ -265,15 +265,15 @@ const handleSubmit = (e: React.FormEvent) => {
               {/* Email */}
               <div className="card p-8">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-12 h-12 bg-[#E6CE8F] rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-[#C19643]" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                       <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                     </svg>
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-[var(--primary)] mb-2">Email Us</h3>
-                    <p className="text-gray-600"><a href="mailto:info@Blue One.ae">info@Blue One.ae</a></p>
+                    <p className="text-gray-600"><a href="mailto:info@blueonegt.ae">info@blueonegt.ae</a></p>
                     <p className="text-gray-600"><a href="mailto:Blue Onefood@gmail.com">Blue Onefood@gmail.com</a></p>
                     <p className="text-gray-600">Response within 24 hours</p>
                   </div>
@@ -283,8 +283,8 @@ const handleSubmit = (e: React.FormEvent) => {
               {/* Business Hours */}
               <div className="card p-8">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <svg className="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-12 h-12 bg-[#E6CE8F] rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-[#C19643]" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                     </svg>
                   </div>
@@ -354,12 +354,12 @@ function LocationsSection() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.1 }}
             >
-              <div className="w-16 h-16 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-gradient-to-r from-[#C19643] to-[#C19643] rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl">🏢</span>
               </div>
               <h3 className="text-xl font-bold text-[var(--primary)] mb-2">{location.city}</h3>
               <p className="text-gray-600 mb-3">{location.country}</p>
-              <p className="text-amber-600 font-medium mb-4">{location.role}</p>
+              <p className="text-[#C19643] font-medium mb-4">{location.role}</p>
               <p className="text-gray-600 text-sm">{location.description}</p>
               <p className="text-gray-400 text-xs mt-4">{location.address}</p>
             </motion.div>

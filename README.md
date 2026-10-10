@@ -14,7 +14,7 @@ A modern, interactive React website for Blue One General Trading LLC, showcasing
 
 ## 🚀 Live Demo
 
-Visit: [https://Blue One.ae](https://Blue One.ae)
+Visit: [https://blueonegt.ae](https://blueonegt.ae)
 
 ## 📱 Pages
 
@@ -91,7 +91,7 @@ npm run preview
 
 4. **Custom Domain**:
    - Go to Site settings > Domain management
-   - Add custom domain: `Blue One.ae`
+   - Add custom domain: `blueonegt.ae`
    - Configure DNS records as instructed
 
 ### Deploy to Render
@@ -111,7 +111,7 @@ npm run preview
 
 3. **Custom Domain**:
    - Go to Settings > Custom Domains
-   - Add `Blue One.ae`
+   - Add `blueonegt.ae`
    - Configure DNS records
 
 ### Deploy to Vercel
@@ -130,7 +130,7 @@ npm run preview
 
 3. **Custom Domain**:
    - Go to Vercel dashboard > Domains
-   - Add `Blue One.ae`
+   - Add `blueonegt.ae`
 
 ## 📊 Product Management
 
@@ -273,8 +273,8 @@ For now, content updates require:
 
 ### Contact Information
 
-- **Website**: [Blue One.ae](https://Blue One.ae)
-- **Email**: info@Blue One.ae
+- **Website**: [blueonegt.ae](https://blueonegt.ae)
+- **Email**: info@blueonegt.ae
 - **Location**: Dubai, UAE
 
 ## 📄 License

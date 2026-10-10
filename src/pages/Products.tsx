@@ -15,7 +15,7 @@ export default function Products() {
 
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-br from-blue-50 to-green-50">
+        <section className="section-padding bg-gradient-to-br from-[#05245369] to-[#C19643]">
           <div className="container-custom text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -85,7 +85,7 @@ export default function Products() {
                     <Link to={`/products/${product.id}`}>
                       <div className="card-product group">
                         <div className="relative overflow-hidden">
-                          <div className="w-full h-64 bg-gradient-to-br from-green-100 to-amber-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                          <div className="w-full h-64 bg-gradient-to-br from-[#E6CE8F] to-[#E6CE8F] flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
                             <motion.span
                               className="text-6xl"
                               whileHover={{ scale: 1.2, rotate: 10 }}
@@ -109,7 +109,7 @@ export default function Products() {
 
                           {/* Featured Badge */}
                           {product.isFeatured && (
-                            <div className="absolute top-4 left-4 bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            <div className="absolute top-4 left-4 bg-[#C19643] text-white px-3 py-1 rounded-full text-sm font-bold">
                               Featured
                             </div>
                           )}
@@ -134,7 +134,7 @@ export default function Products() {
 
                         <div className="p-6">
                           <div className="flex justify-between items-start mb-2">
-                            <h3 className="text-xl font-bold text-[var(--primary)] group-hover:text-amber-600 transition-colors">
+                            <h3 className="text-xl font-bold text-[var(--primary)] group-hover:text-[#C19643] transition-colors">
                               {product.name}
                             </h3>
                             {product.hasSpecialOffer && (
@@ -145,7 +145,7 @@ export default function Products() {
                           <p className="text-gray-600 mb-4 line-clamp-2">{product.description}</p>
                           
                           <div className="flex justify-between items-center mb-4">
-                            <span className="text-sm text-amber-600 font-medium bg-amber-50 px-3 py-1 rounded-full">
+                            <span className="text-sm text-[#C19643] font-medium bg-[#E6CE8F] px-3 py-1 rounded-full">
                               {product.category}
                             </span>
                             <span className="text-sm text-gray-500">
@@ -163,7 +163,7 @@ export default function Products() {
                           )}
 
                           <div className="flex justify-between items-center">
-                            <span className="text-[var(--primary)] font-bold group-hover:text-amber-600 transition-colors">
+                            <span className="text-[var(--primary)] font-bold group-hover:text-[#C19643] transition-colors">
                               Learn More →
                             </span>
                             <div className="flex space-x-1">

@@ -50,7 +50,7 @@ function HeroSection() {
   }, [showVideo]); // Run when video is added to DOM
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 to-green-50">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#05245369] to-[#C19643]">
       {/* 🎥 Background Video */}
       {showVideo && (
         <video
@@ -82,7 +82,7 @@ function HeroSection() {
         {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-4 h-4 bg-amber-400 rounded-full opacity-20"
+            className="absolute w-4 h-4 bg-[#C19643] rounded-full opacity-20"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -114,7 +114,7 @@ function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             Your Global Partner
-            <span className="block text-amber-500">In Food Excellence</span>
+            <span className="block text-[#C19643]">In Food Excellence</span>
           </motion.h1>
           
           <motion.p
@@ -274,7 +274,7 @@ function FeaturedProductsSection({ products }: { products: any[] }) {
               <Link to={`/products/${product.id}`} className="block">
                 <div className="card-product">
                   <div className="relative overflow-hidden">
-                    <div className="w-full h-64 bg-gradient-to-br from-green-100 to-amber-100 flex items-center justify-center bg-cover bg-center"
+                    <div className="w-full h-64 bg-gradient-to-br from-[#E6CE8F] to-[#E6CE8F] flex items-center justify-center bg-cover bg-center"
                     style={{
                       backgroundImage: `url(${product.image})`,
                     }}  
@@ -298,7 +298,7 @@ function FeaturedProductsSection({ products }: { products: any[] }) {
                     <h3 className="text-xl font-bold text-[var(--primary)] mb-2">{product.name}</h3>
                     <p className="text-gray-600 mb-4">{product.description}</p>
                     <div className="flex justify-between items-center">
-                      <span className="text-sm text-amber-600 font-medium">{product.category}</span>
+                      <span className="text-sm text-[#C19643] font-medium">{product.category}</span>
                       <span className="text-[var(--primary)] font-bold">Learn More →</span>
                     </div>
                   </div>
@@ -358,7 +358,7 @@ function StatsSection() {
               transition={{ duration: 0.8, delay: index * 0.1 }}
             >
               <motion.div
-                className="text-4xl lg:text-6xl font-bold text-amber-400 mb-2"
+                className="text-4xl lg:text-6xl font-bold text-[#C19643] mb-2"
                 initial={{ opacity: 0 }}
                 animate={inView ? { opacity: 1 } : {}}
                 transition={{ duration: 1, delay: index * 0.1 + 0.5 }}
@@ -378,7 +378,7 @@ function CTASection() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
 
   return (
-    <section className="section-padding bg-amber-50" ref={ref}>
+    <section className="section-padding bg-[#E6CE8F]" ref={ref}>
       <div className="container-custom text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -86,7 +86,7 @@ export default function ProductDetail() {
                 transition={{ duration: 0.8 }}
               >
                 <div 
-                  className="w-full h-96 lg:h-[500px] bg-gradient-to-br from-green-100 to-amber-100 rounded-2xl flex items-center justify-center shadow-2xl bg-cover bg-center"
+                  className="w-full h-96 lg:h-[500px] bg-gradient-to-br from-[#E6CE8F] to-[#E6CE8F] rounded-2xl flex items-center justify-center shadow-2xl bg-cover bg-center"
                   style={{
                     backgroundImage: validProductImage ? `url(${validProductImage})` : undefined,
                   }}
@@ -123,7 +123,7 @@ export default function ProductDetail() {
                 
                 {product.isFeatured && (
                   <motion.div
-                    className="absolute -bottom-4 -left-4 bg-amber-500 text-white px-4 py-2 rounded-full font-bold shadow-lg"
+                    className="absolute -bottom-4 -left-4 bg-[#C19643] text-white px-4 py-2 rounded-full font-bold shadow-lg"
                     initial={{ scale: 0, rotate: 45 }}
                     animate={{ scale: 1, rotate: 0 }}
                     transition={{ delay: 0.7, type: "spring" }}
@@ -140,7 +140,7 @@ export default function ProductDetail() {
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 <div className="mb-4">
-                  <span className="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">
+                  <span className="inline-block bg-[#E6CE8F] text-[#C19643] px-3 py-1 rounded-full text-sm font-medium">
                     {product.category}
                   </span>
                 </div>
@@ -218,7 +218,7 @@ export default function ProductDetail() {
                       transition={{ duration: 0.6, delay: index * 0.1 }}
                     >
                       <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                        <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                        <svg className="w-5 h-5 text-[#C19643]" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                       </div>
