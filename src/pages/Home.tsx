@@ -10,19 +10,24 @@ const welcomeText = "Welcome to Blue One General Trading."
 export default function Home() {
   const featuredProducts = getFeaturedProducts()
 
-  // Welcome message using native Web Speech API
+  // Welcome message using native Web Speech API - plays only once ever
   useEffect(() => {
+    // Check if welcome already played (persists across page navigations)
+    const playedKey = 'blueonegt_welcome_played'
+    const alreadyPlayed = localStorage.getItem(playedKey)
+
+    if (alreadyPlayed) return // Skip - welcome already spoken
+
     const utterance = new SpeechSynthesisUtterance(welcomeText)
     utterance.lang = navigator.language || 'en-US'
     utterance.rate = 1.0
     utterance.pitch = 1.0
 
-    // Speak on mount (browsers may block autoplay)
-    window.speechSynthesis.speak(utterance)
-
-    // Fallback: speak on first user interaction if autoplay was blocked
+    // Speak on first user interaction - { once: true } ensures exactly one play
     const handleClick = () => {
       window.speechSynthesis.speak(utterance)
+      // Mark as played in localStorage so it won't play on any future page navigation
+      localStorage.setItem(playedKey, '1')
       document.removeEventListener('click', handleClick)
     }
     document.addEventListener('click', handleClick, { once: true })
