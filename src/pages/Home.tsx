@@ -3,10 +3,30 @@ import { useInView } from 'react-intersection-observer'
 import { Link } from 'react-router-dom'
 import { getFeaturedProducts } from '../data/products'
 import SEOHead from '../components/SEOHead'
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react'
+
+const welcomeText = "Welcome to Blue One General Trading."
 
 export default function Home() {
   const featuredProducts = getFeaturedProducts()
+
+  // Welcome message using native Web Speech API
+  useEffect(() => {
+    const utterance = new SpeechSynthesisUtterance(welcomeText)
+    utterance.lang = navigator.language || 'en-US'
+    utterance.rate = 1.0
+    utterance.pitch = 1.0
+
+    // Speak on mount (browsers may block autoplay)
+    window.speechSynthesis.speak(utterance)
+
+    // Fallback: speak on first user interaction if autoplay was blocked
+    const handleClick = () => {
+      window.speechSynthesis.speak(utterance)
+      document.removeEventListener('click', handleClick)
+    }
+    document.addEventListener('click', handleClick, { once: true })
+  }, [])
 
   return (
     <>
