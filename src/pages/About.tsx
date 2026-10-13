@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Link } from 'react-router-dom'
-import { useEffect } from 'react'
 
 export default function About() {
   return (
@@ -294,23 +293,6 @@ function TeamSection() {
 
 function CTASection() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
-
-  const handleSpeakWelcome = () => {
-    const utterance = new SpeechSynthesisUtterance("Welcome to Blue One General Trading.");
-    utterance.lang = 'en-US'
-    utterance.rate = 1.0
-    utterance.pitch = 1.0
-    window.speechSynthesis.speak(utterance)
-  }
-
-  // Speak welcome on first user interaction to bypass autoplay restrictions
-  useEffect(() => {
-    const clickHandler = () => {
-      handleSpeakWelcome()
-      document.removeEventListener('click', clickHandler)
-    }
-    document.addEventListener('click', clickHandler, { once: true })
-  }, [])
 
   return (
     <section className="section-padding bg-[#E6CE8F]" ref={ref}>
