@@ -210,7 +210,7 @@ function TeamSection() {
       expertise: 'Operations oversight, team coordination, and process optimization'
     },
     {
-      name: 'Ahmed Asif Khand',
+      name: 'Ahmed Asif Khanda',
       role: 'Business Development Manager',
       expertise: 'Product quality standards, inspection protocols, and regulatory compliance'
     }
