@@ -20,17 +20,53 @@ export default function Home() {
 
     const utterance = new SpeechSynthesisUtterance(welcomeText)
     utterance.lang = navigator.language || 'en-US'
-    utterance.rate = 1.0
-    utterance.pitch = 1.0
 
-    // Speak on first user interaction - { once: true } ensures exactly one play
-    const handleClick = () => {
-      window.speechSynthesis.speak(utterance)
-      // Mark as played in localStorage so it won't play on any future page navigation
-      localStorage.setItem(playedKey, '1')
-      document.removeEventListener('click', handleClick)
+    // 1. Tweak rates for a more natural, pleasant flow
+    // Slightly slower feels more premium and relaxed
+    // Marginally higher pitch adds warmth/friendliness
+    utterance.rate = 0.95
+    utterance.pitch = 1.05
+
+    // 2. Function to select a high-quality "melodious" voice
+    function setMelodiousVoice() {
+        const voices = window.speechSynthesis.getVoices()
+        
+        // Look for high-quality natural voices first
+        const preferredVoice = voices.find(voice => 
+            (voice.lang.startsWith('en') || voice.lang === utterance.lang) && 
+            (voice.name.includes('Google') || 
+             voice.name.includes('Natural') || 
+             voice.name.includes('Samantha') || // Great default macOS voice
+             voice.name.includes('Premium'))
+        )
+
+        if (preferredVoice) {
+            utterance.voice = preferredVoice
+        }
     }
-    document.addEventListener('click', handleClick, { once: true })
+
+    // 3. Handle asynchronous voice loading
+    if (window.speechSynthesis.onvoiceschanged !== undefined) {
+        window.speechSynthesis.onvoiceschanged = () => {
+            setMelodiousVoice()
+            // Speak on first user interaction after voices load
+            const handleClick = () => {
+                window.speechSynthesis.speak(utterance)
+                localStorage.setItem(playedKey, '1')
+                document.removeEventListener('click', handleClick)
+            }
+            document.addEventListener('click', handleClick, { once: true })
+        }
+    } else {
+        setMelodiousVoice()
+        // Speak on first user interaction
+        const handleClick = () => {
+            window.speechSynthesis.speak(utterance)
+            localStorage.setItem(playedKey, '1')
+            document.removeEventListener('click', handleClick)
+        }
+        document.addEventListener('click', handleClick, { once: true })
+    }
   }, [])
 
   return (

@@ -195,7 +195,7 @@ function TeamSection() {
 
   const teamMembers = [
     {
-      name: 'Asif Hanif Khanda',
+      name: 'Asif Khanda',
       role: 'Director',
       expertise: 'Corporate strategy, market expansion, and stakeholder relations'
     },
@@ -210,7 +210,7 @@ function TeamSection() {
       expertise: 'Operations oversight, team coordination, and process optimization'
     },
     {
-      name: 'Ahmed Asif Khanda',
+      name: 'Ahmed Khanda',
       role: 'Business Development Manager',
       expertise: 'Product quality standards, inspection protocols, and regulatory compliance'
     }
@@ -267,7 +267,7 @@ function TeamSection() {
               </div>
               <h3 className="text-xl font-bold mb-2 text-[#C19643]">{member.name}</h3>
               <p className="text-[#E6CE8F] text-sm font-bold mb-4">{member.role}</p>
-              <p className="text-gray-300 text-xs font-bold line-clamp-4">
+              <p className="text-gray-300 text-xs font-bold line-clamp-3">
                 {member.expertise}
               </p>
             </motion.div>
