@@ -130,7 +130,7 @@ export default function Footer() {
                 </svg>
                 <div>
                   <p className="text-gray-300">Get In Touch</p>
-                  <p className="text-sm text-gray-400"><a href="tel:+971561344527">+971 56-1344527</a></p>
+                  <p className="text-sm text-gray-400"><a href="tel:+971525433669">+971 52-5433669</a></p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
