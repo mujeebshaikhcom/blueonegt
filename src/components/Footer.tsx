@@ -131,6 +131,7 @@ export default function Footer() {
                 <div>
                   <p className="text-gray-300">Get In Touch</p>
                   <p className="text-sm text-gray-400"><a href="tel:+971525433669">+971 52-5433669</a></p>
+                  <p className="text-sm text-gray-400"><a href="tel:045792339">(04) 579 2339</a></p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">

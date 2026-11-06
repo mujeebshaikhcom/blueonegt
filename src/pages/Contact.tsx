@@ -257,6 +257,7 @@ const handleSubmit = (e: React.FormEvent) => {
                   <div>
                     <h3 className="text-xl font-bold text-[var(--primary)] mb-2">Phone Support</h3>
                     <p className="text-gray-600"><a href="tel:+971525433669">+971 52-5433669</a></p>
+                    <p className="text-gray-600"><a href="tel:045792339">(04) 579 2339</a></p>
                     <p className="text-gray-600">Available 24/7 for urgent inquiries</p>
                   </div>
                 </div>
