@@ -190,7 +190,7 @@ npm run preview
 ```css
 /* src/index.css */
 :root {
-	--primary: #155c56; /* Main brand color */
+	--primary: #0a3a6a; /* Main brand color */
 	--primary-light: #0a3a4d; /* Lighter brand color */
 	--secondary: #f59e0b; /* Secondary color (amber) */
 	--accent: #10b981; /* Accent color (green) */
@@ -201,7 +201,7 @@ npm run preview
 
 - **Size**: 160px width × 100px height
 - **Design**: Golden eagle with "Blue One" text below
-- **Text Color**: #155c56
+- **Text Color**: #0a3a6a
 - **Company Name**: Blue One General Trading LLC
 
 ### Animations
@@ -226,7 +226,7 @@ npm run preview
 	"short_name": "Blue One General Trading",
 	"start_url": "/",
 	"display": "standalone",
-	"theme_color": "#155c56"
+	"theme_color": "#0a3a6a"
 }
 ```
 

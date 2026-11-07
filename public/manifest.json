@@ -4,8 +4,8 @@
   "description": "Premium raw food materials shipped worldwide in containers by trucks and ships",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#155c56",
-  "theme_color": "#155c56",
+  "background_color": "#0a3a6a",
+  "theme_color": "#0a3a6a",
   "orientation": "portrait-primary",
   "icons": [
     {
